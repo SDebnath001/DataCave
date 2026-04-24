@@ -1,0 +1,16 @@
+import mongoose from "mongoose";
+
+const connectDB = async () => {
+  try {
+    await mongoose.connect(process.env.MONGO_URI, {
+      dbName: "DataCaveStore",
+    });
+    console.log("MongoDB Connected ✅");
+    console.log("MongoDB Connected to:", mongoose.connection.name);
+  } catch (error) {
+    console.error("DB Error:", error.message);
+    process.exit(1);
+  }
+};
+
+export default connectDB;

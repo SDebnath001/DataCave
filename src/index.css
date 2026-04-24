@@ -1,0 +1,291 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Alumni+Sans+Pinstripe:ital@0;1&family=Alumni+Sans+SC:ital,wght@0,100..900;1,100..900&family=Bebas+Neue&family=Fredoka:wdth,wght@75,300..700&family=Great+Vibes&family=Italiana&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poiret+One&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Zilla+Slab+Highlight:wght@400;700&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+nav {
+  margin: 2em 4em;
+}
+
+.brand h1 a,
+.nav-item a {
+  text-decoration: none;
+}
+
+.brand h1 a {
+  font-family: "Bebas Neue", sans-serif;
+  color: green;
+  font-weight: 600;
+}
+
+.nav-item {
+  display: flex;
+  gap: 2em;
+  font-size: 1.2em;
+  transition: 0.3s;
+}
+
+.nav-item:hover {
+  scale: 1.1;
+}
+
+.nav-item li {
+  list-style-type: none;
+  font-size: 1.2em;
+}
+
+#about {
+  margin: 4em 0em;
+}
+
+.heading {
+  text-align: center;
+}
+
+.heading h1 {
+  font-family: "Poiret One", sans-serif;
+}
+
+.details {
+  margin-top: 2em;
+  font-family: "Poiret One", sans-serif;
+}
+
+.about-data {
+  margin-top: 8em;
+}
+
+.about-data h1 {
+  text-align: center;
+  font-size: 6em;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 0.3em;
+  font-weight: 700;
+}
+
+.about-dt {
+  margin-top: 4em;
+  padding: 3em;
+  display: grid;
+  grid-template-columns: 7fr 5fr;
+  gap: 2em;
+}
+
+.about-img {
+  width: 100%;
+  border-radius: 1em;
+}
+
+.about-dt p {
+  padding: 0.4em 0em;
+  font-family: "Poiret One", sans-serif;
+  font-weight: 200;
+}
+
+.contact-data {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  margin-top: 6em;
+  margin-bottom: 2em;
+  padding: 3em;
+}
+
+.contact-data h1 {
+  font-size: 6em;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 0.2em;
+  font-weight: 700;
+}
+
+.contact-form label {
+  font-size: 1.4em;
+  font-family: "Poiret One", sans-serif;
+}
+
+.input-field {
+  width: 100%;
+  padding: 1.4em;
+  border-radius: 2em;
+  border: 1px solid gray;
+}
+
+.btn-submit {
+  padding: 1em 4em;
+  border: none;
+  background-color: rgb(35, 35, 255);
+  color: white;
+  border-radius: 1.4em;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn-submit:hover {
+  background-color: rgb(0, 0, 185);
+  scale: 0.95;
+  box-shadow: 3px 5px 10px gray;
+}
+
+.contact-form div {
+  margin-bottom: 2em;
+}
+
+.btn-login {
+  border-radius: 1.2em;
+  border: none;
+  padding: 1em 4em;
+  background-color: rgb(0, 173, 0);
+  color: white;
+  transition: 0.2s;
+}
+
+.btn-login:hover {
+  background-color: rgb(0, 155, 0);
+  scale: 0.95;
+  box-shadow: 3px 5px 10px gray;
+}
+
+.login-area h1,
+.register-area h1 {
+  text-align: center;
+  margin: 2em 0em;
+}
+
+.form-label {
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+.register-page {
+  margin-top: 3em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.register-page strong a {
+  text-decoration: none;
+  color: black;
+}
+
+.dashboard-content {
+  width: 95vw;
+  height: 80vh;
+  margin: auto;
+}
+
+.content-area {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 2fr 10fr;
+  gap: 1em;
+}
+
+.data-area {
+  height: 70vh;
+  overflow-y: auto;
+  display: grid;
+  grid-template-columns: 6fr 6fr;
+  gap: 1em;
+}
+
+.login-box,
+.reg-box {
+  width: 50vw;
+}
+
+.login-area,
+.register-area {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-area h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.contact-text strong {
+  font-family: "Poiret One", sans-serif;
+}
+
+.menu-btn {
+  padding: 0.6em 2em;
+  margin: 0.3em 0em;
+  border-radius: 2em;
+  background-color: rgba(159, 201, 255, 0.808);
+  cursor: pointer;
+} 
+
+.menu-btn H6 {
+  margin-bottom: 0em;
+}
+
+.active {
+  background-color: rgb(0, 170, 0);
+  color: white;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+
+  .about-data h1,
+  .contact-data h1 {
+    text-align: center;
+    font-size: 3em;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 0.3em;
+    font-weight: 700;
+  }
+
+  .about-dt,
+  .contact-data {
+    margin-top: 4em;
+    padding: 1.3em;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-text {
+    text-align: center;
+  }
+
+  .user-acc {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    font-size: 0.6em;
+    transition: 0.3s;
+  }
+
+  .content-area {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .data-area {
+    height: 70vh;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  nav {
+    margin: 2em;
+  }
+
+  .login-box,
+  .reg-box {
+    width: 100%;
+  }
+}
