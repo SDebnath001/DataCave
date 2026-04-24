@@ -19,7 +19,7 @@ const Dashboard = () => {
       }
 
       try {
-        const res = await axios.get("http://localhost:5000/api/messages", {
+        const res = await axios.get(`${import.meta.env.VITE_API_URL}/api/messages`, {
           params: {
             userId: user.uid,
             email: user.email,

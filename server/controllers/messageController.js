@@ -31,11 +31,11 @@ export const getMessages = async (req, res) => {
 
     let messages;
 
-    // 🔴 ADMIN → sees all messages
+    // ADMIN → sees all messages
     if (email?.toLowerCase() === process.env.ADMIN_EMAIL.toLowerCase()) {
       messages = await Message.find().sort({ createdAt: -1 });
     } 
-    // 🔵 NORMAL USER → only their messages
+    // NORMAL USER → only their messages
     else {
       messages = await Message.find({
         $or: [

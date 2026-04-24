@@ -19,7 +19,7 @@ app.use("/api/messages", messageRoutes);
 
 // Test route
 app.get("/", (req, res) => {
-  res.send("API running 🚀");
+  res.send("API running");
 });
 
 const PORT = process.env.PORT || 5000;

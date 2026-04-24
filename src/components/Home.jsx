@@ -19,7 +19,7 @@ const Home = () => {
     const user = auth.currentUser;
 
     try {
-      await axios.post("http://localhost:5000/api/messages", {
+      await axios.post(`${import.meta.env.VITE_API_URL}/api/messages`, {
         name: data.name,
         email: user ? user.email : data.email,
         message: data.message,

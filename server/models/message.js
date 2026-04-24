@@ -20,11 +20,11 @@ const messageSchema = new mongoose.Schema(
     },
     userId: {
       type: String,
-      default: null, // ✅ allow guest users
+      default: null, // allow guest users
     },
   },
   {
-    timestamps: true, // ✅ better than manual createdAt
+    timestamps: true, // better than manual createdAt
   }
 );
 
