@@ -3,7 +3,7 @@ import dotenv from "dotenv";
 import express from "express";
 import cors from "cors";
 import connectDB from "./config/db.js";
-import messageRoutes from "./routes/messageRoutes.js";
+import messageRoutes from "./routes/messageroutes.js";
 
 dotenv.config();
 console.log("ENV CHECK:", process.env.MONGO_URI);
