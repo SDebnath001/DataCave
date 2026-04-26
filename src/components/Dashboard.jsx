@@ -67,7 +67,7 @@ const Dashboard = () => {
             <h3 className="text-center bg-warning-subtle rounded-3 py-2">Data and Messages</h3>
             <div className="mt-5 data-area">
               {loading ? (
-                <p className="text-center">Loading...</p>
+                <p className="text-center">Please wait a bit. Server is Loading your messages...</p>
               ) : messages.length === 0 ? (
                 <p className="text-center">No messages yet</p>
               ) : (

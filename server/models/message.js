@@ -24,7 +24,7 @@ const messageSchema = new mongoose.Schema(
     },
   },
   {
-    timestamps: true, // better than manual createdAt
+    timestamps: true,
   }
 );
 
