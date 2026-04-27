@@ -43,13 +43,31 @@ const NavDashboard = () => {
           </button>
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ms-auto align-items-center">
-              <li className="nav-item">
-                <div className="d-flex align-items-center gap-1 border bg-success-subtle rounded p-2 user-acc">
+              <li className="nav-item mx-lg-4 mb-lg-0 mb-2">
+                <div className="input-group">
+                  <input
+                    type="search"
+                    name="search"
+                    id="searchBar"
+                    placeholder="Search here..."
+                    className="form-control rounded p-2"
+                  />
+                  <button
+                    className="btn btn-dark px-4"
+                    type="button"
+                    id="button-addon2"
+                  >
+                    <i className="bi bi-search"></i>
+                  </button>
+                </div>
+              </li>
+              <li className="nav-item mx-lg-4">
+                <div className="d-flex align-items-center gap-1 border bg-success-subtle rounded rounded-5 p-2 user-acc">
                   <div>
                     <strong>{user ? user.email : "Guest"}</strong>
                   </div>
                   <button
-                    className="btn btn-danger btn-sm"
+                    className="btn btn-danger btn-sm rounded rounded-5 logOut-btn"
                     type="button"
                     onClick={handleLogout}
                   >

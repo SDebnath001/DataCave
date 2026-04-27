@@ -5,6 +5,14 @@
   scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar {
+  width: 0.2em;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #e0e0e0;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Alumni+Sans+Pinstripe:ital@0;1&family=Alumni+Sans+SC:ital,wght@0,100..900;1,100..900&family=Bebas+Neue&family=Fredoka:wdth,wght@75,300..700&family=Great+Vibes&family=Italiana&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poiret+One&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Zilla+Slab+Highlight:wght@400;700&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 nav {
@@ -26,11 +34,11 @@ nav {
   display: flex;
   gap: 2em;
   font-size: 1.2em;
-  transition: 0.3s;
 }
 
-.nav-item:hover {
+.nav-item .logOut-btn:hover {
   scale: 1.1;
+  transition: 0.3s;
 }
 
 .nav-item li {
@@ -221,7 +229,7 @@ nav {
   border-radius: 2em;
   background-color: rgba(159, 201, 255, 0.808);
   cursor: pointer;
-} 
+}
 
 .menu-btn H6 {
   margin-bottom: 0em;
@@ -231,6 +239,115 @@ nav {
   background-color: rgb(0, 170, 0);
   color: white;
   text-align: center;
+}
+
+.right {
+  background-color: #F8F8F8;
+  border-radius: 1em;
+  padding: 1.3em;
+}
+
+.add-btn button {
+  padding: 0.5em 1.6em;
+  border-radius: 3em;
+  display: flex;
+  align-items: center;
+}
+
+.add-btn button i {
+  font-size: 2em;
+}
+
+.dashboard-data-btns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.refresh-btn button {
+  border-radius: 5em;
+  font-size: 1.4em;
+}
+
+.add-date-layout {
+  display: flex;
+  gap: 3em;
+}
+
+/*Date capsule*/
+.date-badge {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #1f1f1f;
+  color: #fff;
+  padding: 0.5em 2em;
+  border-radius: 4em;
+  width: fit-content;
+  gap: 1em;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.date-left {
+  display: flex;
+  align-items: center;
+  gap: 0.3em;
+}
+
+.date-day {
+  font-size: 2em;
+  font-weight: 700;
+}
+
+.date-month-year {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.7rem;
+  line-height: 1;
+  color: #cfcfcf;
+}
+
+.date-right {
+  font-size: 2em;
+  font-weight: 500;
+  color: #ffa500;
+}
+
+/*Message Css*/
+.message-cards {
+  padding: 1em 2em;
+  box-shadow: 3px 3px 7px #7e7e7e;
+}
+
+.message-card-head {
+  font-size: 2em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.checkboxInput {
+  font-size: medium;
+  cursor: pointer;
+}
+
+.card-message-body {
+  margin-top: -0.7em;
+}
+
+.message-email-id,
+.userMsg {
+  color: #7e7e7e;
+}
+
+.Umessage {
+  height: 10em;
+  overflow: auto;
+  text-align: justify;
+}
+
+.msgDate {
+  border-radius: 1em;
+  border: 1px solid rgb(228, 228, 228);
+  padding: 0.3em 0.8em;
 }
 
 @media (max-width: 900px) {
@@ -287,5 +404,11 @@ nav {
   .login-box,
   .reg-box {
     width: 100%;
+  }
+
+  .add-date-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6em;
   }
 }
