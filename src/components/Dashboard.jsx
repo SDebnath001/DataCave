@@ -46,20 +46,30 @@ const Dashboard = () => {
       <div className="dashboard-content">
         <div className="content-area">
           <div className="left p-2">
-            <div className="menu-btn active">
-              <h6 className="text-center">DASHBOARD</h6>
+            <div className="">
+              <div className="menu-btn active">
+                <h6>DASHBOARD</h6>
+              </div>
+              <div className="menu-btn">
+                <h6>PASSWORDS</h6>
+              </div>
+              <div className="menu-btn">
+                <h6>ANALYSIS</h6>
+              </div>
+              <div className="menu-btn">
+                <h6>TASKS</h6>
+              </div>
+              <div className="menu-btn">
+                <h6>HELP</h6>
+              </div>
             </div>
-            <div className="menu-btn">
-              <h6 className="text-center">ANALYSIS</h6>
-            </div>
-            <div className="menu-btn">
-              <h6 className="text-center">TASKS</h6>
-            </div>
-            <div className="menu-btn">
-              <h6 className="text-center">SETTINGS</h6>
-            </div>
-            <div className="menu-btn">
-              <h6 className="text-center">HELP</h6>
+            <div className="profile-btns my-lg-5">
+              <div>
+                <i className="bi bi-person-circle"></i>
+              </div>
+              <div>
+                <i className="bi bi-gear-fill"></i>
+              </div>
             </div>
           </div>
           <div className="right">
@@ -77,11 +87,7 @@ const Dashboard = () => {
                     <div className="message-card-head">
                       <strong>{msg.name}</strong>
                       <div className="d-flex gap-2 checkboxInput">
-                        <label
-                          className="form-check-label"
-                        >
-                          Read
-                        </label>
+                        <label className="form-check-label">Read</label>
                         <input
                           type="checkbox"
                           name="read"

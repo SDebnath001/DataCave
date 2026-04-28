@@ -226,25 +226,36 @@ nav {
 .menu-btn {
   padding: 0.6em 2em;
   margin: 0.3em 0em;
-  border-radius: 2em;
-  background-color: rgba(159, 201, 255, 0.808);
   cursor: pointer;
 }
 
 .menu-btn H6 {
+  font-size: 1.6em;
   margin-bottom: 0em;
 }
 
 .active {
-  background-color: rgb(0, 170, 0);
-  color: white;
+  border-left: 0.6em solid black;
+  border-right: 0.6em solid black;
   text-align: center;
+  background-color: #f1f1f1;
 }
 
 .right {
   background-color: #F8F8F8;
   border-radius: 1em;
   padding: 1.3em;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.profile-btns .bi {
+  font-size: 2em;
+  cursor: pointer;
 }
 
 .add-btn button {
